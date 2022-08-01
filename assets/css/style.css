@@ -130,7 +130,6 @@ section img {
 }
 
 .kolom {
-	margin-top: 20px;
 	margin-bottom: 50px;
 }
 
@@ -146,10 +145,10 @@ p {
 	padding: 10px 0 10px 0;
 }
 
-.btn-succes {
+.btn {
 	background-color: #f8b600;
 	border: 2px solid #f8b600;
-	border-radius: 30px;
+	border-radius: 5px;
 	margin-top: 20px;
 	padding: 15px 20px 15px 20px;
 	color: white;
@@ -157,7 +156,7 @@ p {
 	font-weight: bold;
 }
 
-.btn-succes:hover {
+.btn:hover {
 	background: white;
 	border: 2px solid #f8b600;
 	color: #f8b600;
@@ -194,7 +193,7 @@ main {
 }
 
 #about img {
-	width: 50%;
+	width: 25%;
 	height: auto;
 	border-radius: 20px;
 	margin: 0px 0 30px 10px;
