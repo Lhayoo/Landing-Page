@@ -141,13 +141,14 @@ p {
 	margin: 10px 0 10px 0;
 	padding: 10px 0 10px 0;
 }
-
+.kolom .btn {
+	margin-top: 20px;
+	padding: 15px 20px 15px 20px;
+}
 .btn {
 	background-color: #f8b600;
 	border: 2px solid #f8b600;
 	border-radius: 5px;
-	margin-top: 20px;
-	padding: 15px 20px 15px 20px;
 	color: white;
 	cursor: pointer;
 	font-weight: bold;
@@ -202,6 +203,7 @@ main {
 	position: relative;
 	display: flex;
 	color: #ffffff;
+	justify-content: center;
 }
 
 .card {
@@ -210,6 +212,7 @@ main {
 	background-color: #fff;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 	border: 1px solid #f8b600;
+	margin: 0 10px;
 }
 
 .image-content,
@@ -278,6 +281,11 @@ h1 .aaa {
 	color: #707070;
 	text-align: center;
 }
+
+.card-content .small {
+	padding: 10px 15px 10px 15px;
+	margin-bottom: 10px;
+}
 /* mobile */
 @media screen and (max-width: 991.98px) {
 	.header {
@@ -304,10 +312,13 @@ h1 .aaa {
 	#about img {
 		width: 100%;
 	}
-	.card {
+	.container-card {
+		width: 90%;
 		display: block;
+	}
+	.card {
 		width: 100%;
 		height: auto;
-		align-items: center;
+		margin-bottom: 20px;
 	}
 }
