@@ -186,7 +186,7 @@ main {
 #about {
 	margin: auto;
 	display: flex;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #about img {
@@ -194,6 +194,15 @@ main {
 	height: auto;
 	border-radius: 20px;
 	margin: 0px 0 50px 0;
+}
+
+#product h1 {
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	font-family: "montserrat", sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .container-card {
@@ -261,13 +270,6 @@ main {
 	background-color: #fff;
 }
 
-h1 .aaa {
-	color: black;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: "montserrat", sans-serif;
-	text-align: center;
-}
 .card-image {
 	position: relative;
 	height: 150px;
@@ -280,7 +282,9 @@ h1 .aaa {
 	width: 100%;
 	object-fit: cover;
 }
+
 .name {
+	text-align: center;
 	font-size: 18px;
 	font-weight: 500;
 	color: #333;
