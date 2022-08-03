@@ -3,6 +3,7 @@
 	margin: 0;
 	font-family: "Poppins", sans-serif;
 	text-decoration: none;
+	box-sizing: border-box;
 }
 
 .header {
@@ -37,7 +38,7 @@ nav {
 	position: fixed;
 	top: 0;
 	background: #ffffff;
-	z-index: 1;
+	z-index: 999;
 }
 
 nav ul {
@@ -80,7 +81,7 @@ nav ul li a:hover {
 	width: 300px;
 	background-color: #fff;
 	transition: 0.3s;
-	z-index: 9999;
+	z-index: 1;
 }
 
 .sidebar ul li a {
@@ -94,7 +95,7 @@ nav ul li a:hover {
 }
 
 .sidebar ul li:hover {
-	background-color: #f9f9f9;
+	background-color: #f8b600;
 }
 
 #check:checked ~ .sidebar {
@@ -114,23 +115,23 @@ nav ul li a:hover {
 	clear: both;
 }
 
-section {
+#home {
 	margin: auto;
 	display: flex;
 	margin-bottom: 50px;
 }
 
-section img {
+#home img {
 	width: 60%;
 	height: auto;
 	border-radius: 5px;
 }
 
-.kolom {
+.column {
 	margin-bottom: 50px;
 }
 
-.kolom .deskripsi {
+.column .description {
 	font-size: 20px;
 	font-weight: bold;
 	font-family: "Montserrat", sans-serif;
@@ -141,10 +142,12 @@ p {
 	margin: 10px 0 10px 0;
 	padding: 10px 0 10px 0;
 }
-.kolom .btn {
+
+.column .btn {
 	margin-top: 20px;
 	padding: 15px 20px 15px 20px;
 }
+
 .btn {
 	background-color: #f8b600;
 	border: 2px solid #f8b600;
@@ -160,7 +163,7 @@ p {
 	color: #f8b600;
 }
 
-h2 {
+#home h2 {
 	font-family: "comic sans ms", sans-serif;
 	font-weight: bold;
 	font-size: 45px;
@@ -172,9 +175,10 @@ h2 {
 
 main {
 	background: #f6f6f6;
+	padding: 30px 0 0 0;
 }
 
-.about {
+.about-content {
 	font-size: 30px;
 	color: black;
 	font-weight: bold;
@@ -196,7 +200,7 @@ main {
 	margin: 0px 0 50px 0;
 }
 
-#product h1 {
+section h1 {
 	font-size: 30px;
 	color: black;
 	font-weight: bold;
@@ -212,17 +216,7 @@ main {
 	display: flex;
 	color: #ffffff;
 	justify-content: center;
-}
-
-.container-card h1 {
-	float: left;
-	text-align: center;
-	font-size: 30px;
-	color: black;
-	font-weight: bold;
-	font-family: "montserrat", sans-serif;
-	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 80px;
 }
 
 .card {
@@ -230,7 +224,7 @@ main {
 	border-radius: 25px;
 	background-color: #fff;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-	border: 1px solid #f8b600;
+	/* border: 1px solid #f8b600; */
 	margin: 0 10px;
 }
 
@@ -290,7 +284,7 @@ main {
 	color: #333;
 	margin-bottom: 10px;
 }
-.description {
+.card-content .description {
 	font-size: 14px;
 	color: #707070;
 	text-align: center;
@@ -300,7 +294,62 @@ main {
 	padding: 10px 15px 10px 15px;
 	margin-bottom: 10px;
 }
-/* mobile */
+
+aside {
+	background: #f6f6f6;
+	padding: 20px;
+}
+
+.overlay-testimonials {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #f8b600;
+	border-radius: 25px 25px 0 0;
+}
+
+.container-image,
+.card-image-testimonials {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: #f8b600;
+}
+
+.card-image-testimonials img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+
+.name-header {
+	font-style: "montserrat", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.status {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+footer {
+	text-align: center;
+}
+
+/* mobile responsive */
 @media screen and (max-width: 991.98px) {
 	.header {
 		width: 90%;
@@ -313,6 +362,13 @@ main {
 	}
 	nav ul {
 		display: none;
+	}
+	#home {
+		display: block;
+	}
+	#home img {
+		width: 100%;
+		height: auto;
 	}
 	section {
 		display: block;
