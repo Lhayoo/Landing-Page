@@ -10,10 +10,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-header {
-	margin-bottom: 80px;
-}
-
 .header {
 	width: 90%;
 	margin: auto;
@@ -118,6 +114,7 @@ nav ul li a:hover {
 	margin: auto;
 	display: flex;
 	margin-bottom: 50px;
+	padding-top: 5rem;
 }
 
 #home img {
@@ -175,11 +172,10 @@ p {
 
 main {
 	background: #f6f6f6;
-	padding: 20px 0 0 0;
 }
 
 #about {
-	margin-top: 40px;
+	padding-top: 5rem;
 }
 
 .header-about {
@@ -189,7 +185,6 @@ main {
 	font-family: "montserrat", sans-serif;
 	text-align: center;
 	margin-bottom: 20px;
-	margin-top: 20px;
 }
 
 .about-content {
@@ -212,6 +207,10 @@ section h1 {
 	font-family: "montserrat", sans-serif;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+article {
+	padding-top: 5rem;
 }
 
 .container-card {
@@ -302,7 +301,7 @@ section h1 {
 
 aside {
 	background: #f6f6f6;
-	padding: 20px;
+	padding-top: 5rem;
 }
 
 .overlay-testimonials {
@@ -381,10 +380,10 @@ footer {
 	section img {
 		width: 100%;
 	}
-	#about {
+	.about-content {
 		display: block;
 	}
-	#about img {
+	.about-content img {
 		width: 100%;
 	}
 	.container-card {
