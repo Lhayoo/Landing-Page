@@ -108,6 +108,8 @@ nav ul li a:hover {
 
 .container {
 	width: 90%;
+	margin: auto;
+	position: relative;
 }
 
 #home {
