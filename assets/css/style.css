@@ -356,7 +356,7 @@ footer {
 }
 
 /* mobile responsive */
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 990px) {
 	.header {
 		width: 90%;
 	}
