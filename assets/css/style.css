@@ -339,12 +339,12 @@ section h1 {
   padding: 50px;
 }
 
-.address {
-  float: left;
+#contact a {
+  color: black;
 }
 
-.address a {
-  color: #000;
+.address {
+  float: left;
 }
 
 .sosial-media {
@@ -400,5 +400,13 @@ footer {
     height: auto;
     margin-bottom: 20px;
     margin-left: 0;
+  }
+  .address {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .sosial-media {
+    float: none;
+    margin-bottom: 20px;
   }
 }
