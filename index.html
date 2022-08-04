@@ -20,13 +20,18 @@
 </head>
 
 <body>
-	<header>
-		<!-- Start Nav -->
-		<nav>
-			<div class="header">
+	<div class="container-navbar">
+		<div class="container">
+			<!-- Start Header -->
+			<header>
 				<div class="logo">
 					<a href="#home">lammm<span>Joki</span></a>
 				</div>
+			</header>
+			<!-- End Header -->
+
+			<!-- Start Navbar -->
+			<nav>
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -35,75 +40,82 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<!-- Button Sidebar -->
-				<label for="check" class="mobile_menu icon"><i class="fa-solid fa-bars fa-2x"
-				onclick="changeIcon(this)"></i></label>
-			</div>
-		</nav>
-		<!-- End Nav -->
-
-		<!-- Start Sidebar -->
-		<input type="checkbox" id="check" class="icon"/>
-		<div class="sidebar">
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#product">Product List</a></li>
-				<li><a href="#testimonials">Testimonials</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-		<!-- End Sidebar -->
-	</header>
-
-	<!-- Start Home -->
-	<div class="container" id="home">
-		<img src="assets/img/c_sistem-belajar-11.png" alt="" srcset="" />
-		<div class="column">
-			<p class="description logo">Dengan lammm<span>Joki</span></p>
-			<h2>Belajar cepat,singkat dan tepat</h2>
-			<p>
-				Website joki tugas berkualitas dan terpercaya yang ada di
-				Pekalongan.
-			</p>
-			<p class="logo">
-				Jokilah tugasmu di <b>lammm<span>Joki</span></b> supaya push rankmu
-				tidak terganggu dengan tugas yang menumpuk.
-			</p>
-			<p>
-				<a href="https://wa.me/62895703024454" class="btn">Get Started</a>
-			</p>
+				<label for="check" class="mobile_menu"><i class="fa-solid fa-bars fa-2x"
+						onclick="changeIcon(this)"></i></label>
+			</nav>
 		</div>
 	</div>
-	<!-- End Home -->
+	<!-- End Navbar -->
 
-	<!-- Start About -->
-	<main id="about">
-		<h1 class="header-about logo">About <br> lammm<span>Joki</span></h1>
-		<div class="container about-content">
-			<div class="column logo">
-				<p>
-					<b>lammm<span>Joki</span>,</b> adalah sebuah website yang
-					menyediakan layanan joki tugas. Kami menyediakan layanan joki
-					tugas untuk membantu anda dalam menghadapi permasalahan yang anda
-					alami dalam membut tugas.
-				</p>
-				<p>
-					<b>lammm<span>Joki</span>,</b> Dibuat oleh seorang mahasiswa dari
-					kampus STMIK Widya Pratama Pekalongan yang berkuliah di jurusan
-					Teknik Informatika.
-				</p>
-				<p>
-					<b>Saya</b>, M. Nurul Alam adalah founder sekaligus pengembang
-					dari website <b>lammm<span>Joki</span></b>. Saya lahir di Pekalongan tanggal 19 november 2003,
-					Motivasi
-					saya untuk membuat website ini karena banyak teman di kampus saya
-					yang kesulitan dalam mengerjakan tugas jadi saya berinisiatif
-					untuk membantu teman-teman saya dalam mengatasi kesulatan ketika
-					mengerjakan tugas.
-				</p>
+	<!-- Start Sidebar -->
+	<input type="checkbox" id="check" />
+	<div class="sidebar">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#product">Product List</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	<!-- End Sidebar -->
+
+	<main>
+		<!-- Start Home -->
+		<div class="container">
+			<div id="home">
+				<img src="assets/img/c_sistem-belajar-11.png" alt="" srcset="" />
+				<div class="column">
+					<p class="description logo">Dengan lammm<span>Joki</span></p>
+					<h2>Belajar cepat,singkat dan tepat</h2>
+					<p>
+						Website joki tugas berkualitas dan terpercaya yang ada di
+						Pekalongan.
+					</p>
+					<p class="logo">
+						Jokilah tugasmu di <b>lammm<span>Joki</span></b> supaya push rankmu
+						tidak terganggu dengan tugas yang menumpuk.
+					</p>
+					<p>
+						<a href="https://wa.me/62895703024454" class="btn">Get Started</a>
+					</p>
+				</div>
 			</div>
-			<img src="assets/img/pp.png" alt="" />
 		</div>
+		<!-- End Home -->
+
+		<!-- Start About -->
+		<article id="about">
+			<div class="container">
+				<h1 class="header-about logo">About <br> lammm<span>Joki</span></h1>
+				<div class="about-content">
+					<div class="column logo">
+						<p>
+							<b>lammm<span>Joki</span>,</b> adalah sebuah website yang
+							menyediakan layanan joki tugas. Kami menyediakan layanan joki
+							tugas untuk membantu anda dalam menghadapi permasalahan yang anda
+							alami dalam membut tugas.
+						</p>
+						<p>
+							<b>lammm<span>Joki</span>,</b> Dibuat oleh seorang mahasiswa dari
+							kampus STMIK Widya Pratama Pekalongan yang berkuliah di jurusan
+							Teknik Informatika.
+						</p>
+						<p>
+							<b>Saya</b>, M. Nurul Alam adalah founder sekaligus pengembang
+							dari website <b>lammm<span>Joki</span></b>. Saya lahir di Pekalongan tanggal 19 november
+							2003,
+							Motivasi
+							saya untuk membuat website ini karena banyak teman di kampus saya
+							yang kesulitan dalam mengerjakan tugas jadi saya berinisiatif
+							untuk membantu teman-teman saya dalam mengatasi kesulatan ketika
+							mengerjakan tugas.
+						</p>
+					</div>
+					<img src="assets/img/pp.png" alt="" />
+				</div>
+			</div>
+		</article>
 	</main>
 	<!-- End About -->
 
@@ -168,7 +180,7 @@
 		<!-- End Product -->
 
 		<!-- Start Testimonials -->
-		<aside id="testimonials">
+		<article id="testimonials">
 			<h1 class="logo">Testimonials <span>Customers</span></h1>
 			<div class="container-card">
 				<!-- Card 1 -->
@@ -273,10 +285,42 @@
 						<a href="" class="btn small">Click Here</a>
 					</div>
 				</div>
-		</aside>
+		</article>
 		<!-- End Testimonials -->
 	</section>
 
+	<section>
+		<!-- Start Contact -->
+		<article id="contact">
+			<div class="container">
+			<h1 class="logo">Contact <span>Me</span></h1>
+				<div class="address">
+					<h2>Address</h2>
+					<p>
+						<a href=""> <i class="fa-solid fa-envelope"></i> m.nurulalam200@gmail.com</a>
+					</p>
+					<p>
+						<a href=""> <i class="fa-solid fa-phone"></i> +62 895 7030 2445 4</a>
+					</p>
+					<p>
+						<a href=""> <i class="fa-solid fa-phone"></i> +62 858 7663 9155</a>
+					</p>
+					<p>
+						<a href=""> <i class="fa-solid fa-house"></i> Jl. Patriot No.25, Dukuh, Kota Pekalongan</a>
+					</p>
+				</div>
+				<div class="sosial-media">
+					<h2>Sosial Media</h2>
+					<p class="icon">
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+						<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+					</p>
+				</div>
+			</div>
+		</article>
+		<!-- end Contact -->
+	</section>
 	<!-- Start Footer -->
 	<footer>
 		<div class="container logo">
