@@ -33,7 +33,12 @@ body {
   clear: both;
 }
 
+.logo {
+  font-family: "montserrat", sans-serif;
+}
+
 .logo a {
+  font-family: "montserrat", sans-serif;
   font-size: 30px;
   font-weight: 600;
   float: left;
@@ -196,7 +201,7 @@ p {
   margin: 0px 0 50px 0;
 }
 
-section h1 {
+h1 {
   font-size: 30px;
   color: black;
   font-weight: bold;
