@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>lammmJoki</title>
-	<link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+	<link rel="icon" type="image/x-icon" href="assets/img/icon.png" alt="lammmJoki" />
 	<!-- Style css -->
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<!-- font awesome -->
@@ -20,16 +20,12 @@
 </head>
 
 <body>
-	<div class="container-navbar">
+	<!-- Start Header -->
+	<header>
 		<div class="container">
-			<!-- Start Header -->
-			<header>
-				<div class="logo">
-					<a href="#home">lammm<span>Joki</span></a>
-				</div>
-			</header>
-			<!-- End Header -->
-
+			<div class="logo">
+				<a href="#home">lammm<span>Joki</span></a>
+			</div>
 			<!-- Start Navbar -->
 			<nav>
 				<ul>
@@ -43,28 +39,30 @@
 				<label for="check" class="mobile_menu"><i class="fa-solid fa-bars fa-2x"
 						onclick="changeIcon(this)"></i></label>
 			</nav>
+			<!-- End Navbar -->
 		</div>
-	</div>
-	<!-- End Navbar -->
 
-	<!-- Start Sidebar -->
-	<input type="checkbox" id="check" />
-	<div class="sidebar">
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#product">Product List</a></li>
-			<li><a href="#testimonials">Testimonials</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</div>
-	<!-- End Sidebar -->
+		<!-- Start Sidebar -->
+		<input type="checkbox" id="check" />
+		<div class="sidebar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#product">Product List</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+	</header>
+	<!-- End Header -->
 
+	<!-- Start Main -->
 	<main>
 		<!-- Start Home -->
-		<div class="container">
-			<div id="home">
-				<img src="assets/img/c_sistem-belajar-11.png" alt="" srcset="" />
+		<article>
+			<div class="container" id="home">
+				<img src="assets/img/c_sistem-belajar-11.png" alt="banner1" srcset="" />
 				<div class="column">
 					<p class="description">Dengan <b class="logo"> lammm<span>Joki</span></b></p>
 					<h2>Belajar cepat,singkat dan tepat</h2>
@@ -82,11 +80,11 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</article>
 		<!-- End Home -->
 
 		<!-- Start About -->
-		<article id="about">
+		<aside id="about">
 			<div class="container">
 				<h1 class="header-about logo">About <br> lammm<span>Joki</span></h1>
 				<div class="about-content">
@@ -104,7 +102,8 @@
 						</p>
 						<p>
 							<b>Saya</b>, M. Nurul Alam adalah founder sekaligus pengembang
-							dari website <b class="logo">lammm<span>Joki</span></b>. Saya lahir di Pekalongan tanggal 19 november
+							dari website <b class="logo">lammm<span>Joki</span></b>. Saya lahir di Pekalongan tanggal 19
+							november
 							2003,
 							Motivasi
 							saya untuk membuat website ini karena banyak teman di kampus saya
@@ -113,12 +112,13 @@
 							mengerjakan tugas.
 						</p>
 					</div>
-					<img src="assets/img/person.png" alt="" />
+					<img src="assets/img/pp.png" alt="Profile Developer" />
 				</div>
 			</div>
-		</article>
+		</aside>
+		<!-- End About -->
 	</main>
-	<!-- End About -->
+	<!-- End Main -->
 
 	<section>
 		<!-- Start Product -->
@@ -130,7 +130,7 @@
 					<div class="image-content">
 						<span class="overlay"></span>
 						<div class="card-image">
-							<img src="assets/img/book.png" alt="" srcset="" class="card-img" />
+							<img src="assets/img/book.png" alt="Buku" srcset="" class="card-img" />
 						</div>
 					</div>
 					<div class="card-content">
@@ -149,7 +149,7 @@
 					<div class="image-content">
 						<span class="overlay"></span>
 						<div class="card-image">
-							<img src="assets/img/laporan.png" alt="" srcset="" class="card-img" />
+							<img src="assets/img/laporan.png" alt="laporan" srcset="" class="card-img" />
 						</div>
 					</div>
 					<div class="card-content">
@@ -168,7 +168,7 @@
 					<div class="image-content">
 						<span class="overlay"></span>
 						<div class="card-image">
-							<img src="assets/img/skripsi.png" alt="" srcset="" class="card-img" />
+							<img src="assets/img/skripsi.png" alt="Skripsi" srcset="" class="card-img" />
 						</div>
 					</div>
 					<div class="card-content">
@@ -195,7 +195,7 @@
 						<span class="overlay-testimonials"></span>
 						<div class="container-image">
 							<div class="card-image-testimonials">
-								<img src="assets/img/person1.jpg" alt="" srcset="" class="card-img" />
+								<img src="assets/img/person1.jpg" alt="Customers 1" srcset="" class="card-img" />
 							</div>
 						</div>
 					</div>
@@ -203,7 +203,8 @@
 						<h2 class="name-header">Siti</h2>
 						<h2 class="status">Mahasiswi</h2>
 						<p class="description">
-							Menjoki di <b class="logo">lammm<span>Joki</span></b> sangatlah memuaskan karena pelayanan yang cepat dan
+							Menjoki di <b class="logo">lammm<span>Joki</span></b> sangatlah memuaskan karena pelayanan
+							yang cepat dan
 							prosesnya cepat dan harganya terjangkau untuk kantong mahasiswa.
 						</p>
 					</div>
@@ -214,7 +215,7 @@
 						<span class="overlay-testimonials"></span>
 						<div class="container-image">
 							<div class="card-image-testimonials">
-								<img src="assets/img/person4.jpg" alt="" srcset="" class="card-img" />
+								<img src="assets/img/person4.jpg" alt="Customers 2" srcset="" class="card-img" />
 							</div>
 						</div>
 					</div>
@@ -233,7 +234,7 @@
 						<span class="overlay-testimonials"></span>
 						<div class="container-image">
 							<div class="card-image-testimonials">
-								<img src="assets/img/person5.jpg" alt="" srcset="" class="card-img" />
+								<img src="assets/img/person5.jpg" alt="Customers 3" srcset="" class="card-img" />
 							</div>
 						</div>
 					</div>
@@ -241,7 +242,8 @@
 						<h2 class="name-header">Annisa</h2>
 						<h2 class="status">Mahasiswi</h2>
 						<p class="description">
-							Pelayanan di <b class="logo">lammm<span>Joki</span></b> sangat cepat dan sangat ramah untuk para penjokinya.
+							Pelayanan di <b class="logo">lammm<span>Joki</span></b> sangat cepat dan sangat ramah untuk
+							para penjokinya.
 						</p>
 					</div>
 				</div>
@@ -253,7 +255,7 @@
 						<span class="overlay-testimonials"></span>
 						<div class="container-image">
 							<div class="card-image-testimonials">
-								<img src="assets/img/person3.png" alt="" srcset="" class="card-img" />
+								<img src="assets/img/person3.png" alt="Customers 4" srcset="" class="card-img" />
 							</div>
 						</div>
 					</div>
@@ -261,7 +263,8 @@
 						<h2 class="name-header">Friman Udin</h2>
 						<h2 class="status">Mahasiswa</h2>
 						<p class="description">
-							Pelayanan di <b class="logo">lammm<span>Joki</span></b> sangat cepat dan sangat ramah untuk para penjokinya.
+							Pelayanan di <b class="logo">lammm<span>Joki</span></b> sangat cepat dan sangat ramah untuk
+							para penjokinya.
 						</p>
 					</div>
 				</div>
@@ -271,7 +274,7 @@
 						<span class="overlay-testimonials"></span>
 						<div class="container-image">
 							<div class="card-image-testimonials">
-								<img src="assets/img/perosn2.jpg" alt="" srcset="" class="card-img" />
+								<img src="assets/img/perosn2.jpg" alt="Customers 5" srcset="" class="card-img" />
 							</div>
 						</div>
 					</div>
@@ -279,7 +282,8 @@
 						<h2 class="name-header">Alam</h2>
 						<h2 class="status">Mahasiswa</h2>
 						<p class="description">
-							Proses joki tugas di<b class="logo">lammm<span>Joki</span></b> sangat cepat dan hasil sangat memuaskan.
+							Proses joki tugas di<b class="logo">lammm<span>Joki</span></b> sangat cepat dan hasil sangat
+							memuaskan.
 						</p>
 					</div>
 				</div>
@@ -287,10 +291,10 @@
 		<!-- End Testimonials -->
 	</section>
 
-	<section>
-		<!-- Start Contact -->
-		<article id="contact">
-			<div class="container">
+	<section id="contact">
+		<div class="container">
+			<!-- Start Contact -->
+			<article>
 				<h1 class="logo">Contact <span>Me</span></h1>
 				<div class="address">
 					<h2>Address</h2>
@@ -307,6 +311,8 @@
 						<a href="#"> <i class="fa-solid fa-house"></i> Jl. Patriot No.25, Dukuh, Kota Pekalongan</a>
 					</p>
 				</div>
+			</article>
+			<aside>
 				<div class="sosial-media">
 					<h2>Sosial Media</h2>
 					<p class="icon">
@@ -317,8 +323,8 @@
 						<a href="https://instagram.com/lammmzt"><i class="fa-brands fa-instagram"></i></a>
 					</p>
 				</div>
-			</div>
-		</article>
+			</aside>
+		</div>
 		<!-- end Contact -->
 	</section>
 	<!-- Start Footer -->
