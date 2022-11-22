@@ -369,6 +369,9 @@ footer {
 	.mobile_menu:hover {
 		cursor: pointer;
 	}
+	a li {
+		color: #000;
+	}
 	.sidebar {
 		display: block;
 		position: fixed;
@@ -406,6 +409,7 @@ footer {
 
 	.sidebar ul li:hover,
 	.sidebar-active ul li:hover {
+		cursor: pointer;
 		background-color: #f8b600;
 	}
 
