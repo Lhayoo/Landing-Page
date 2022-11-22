@@ -1,11 +1,18 @@
-// function getIcon
-let getIcon = function (id) {
-    return document.getElementsByName(check);
+// mobile menu
+const mobileMenu = document.getElementById('mobileMenu');
+const bars = document.getElementById("bars");
+
+mobileMenu.onclick = function () {
+    document.getElementById("sidebar").classList.toggle("sidebar-active");
+    if (document.getElementById("sidebar").classList.contains("sidebar-active")) {
+        bars.classList.remove("fa-bars");
+        bars.classList.add("fa-xmark");
+    } else {
+        bars.classList.remove("fa-xmark");
+        bars.classList.add("fa-bars");
+    }
 }
-// function change Icon
-let changeIcon = function (id) {
-    id.classList.toggle('fa-xmark');
-}
+
 
 // scroll animation
 const card = document.querySelectorAll(".card");

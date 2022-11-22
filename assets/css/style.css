@@ -66,51 +66,17 @@ nav ul li a {
 
 nav ul li a:hover {
 	text-decoration: underline #f8b600 3px;
+	transition: all 0.3s ease-in;
 }
-
 .mobile_menu {
-	float: right;
-	display: none;
-	padding: 18px;
-}
-
-.mobile_menu:hover {
-	cursor: pointer;
-}
-
-#check {
 	display: none;
 }
-
 .sidebar {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: -300px;
-	width: 300px;
-	background-color: #fff;
-	transition: 0.3s;
-	z-index: 2;
+	display: none;
 }
-
-.sidebar ul li a {
-	color: black;
+.sidebar-active {
+	display: none;
 }
-
-.sidebar ul li {
-	padding: 24px;
-	transition: 0.3s;
-	transition-property: bacground-color;
-}
-
-.sidebar ul li:hover {
-	background-color: #f8b600;
-}
-
-#check:checked ~ .sidebar {
-	left: 0;
-}
-
 #home {
 	margin: auto;
 	display: flex;
@@ -174,6 +140,7 @@ p {
 	background: white;
 	border: 2px solid #f8b600;
 	color: #f8b600;
+	transition: all 0.3s ease-in;
 }
 
 .header-about {
@@ -393,7 +360,55 @@ footer {
 	}
 	.mobile_menu {
 		display: block;
+		float: right;
+		padding: 18px;
+		border: 0px;
+		background: transparent;
+		transition: all 1s ease-in-out;
 	}
+	.mobile_menu:hover {
+		cursor: pointer;
+	}
+	.sidebar {
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -300px;
+		width: 300px;
+		background-color: #fff;
+		transition: 0.3s;
+		z-index: 2;
+	}
+	.sidebar-active {
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 300px;
+		background-color: #fff;
+		transition: 0.3s;
+		z-index: 2;
+	}
+
+	.sidebar-active ul li a,
+	.sidebar ul li a {
+		color: black;
+	}
+
+	.sidebar-active ul li,
+	.sidebar ul li {
+		padding: 24px;
+		transition: 0.3s;
+		transition-property: bacground-color;
+	}
+
+	.sidebar ul li:hover,
+	.sidebar-active ul li:hover {
+		background-color: #f8b600;
+	}
+
 	#home {
 		display: block;
 	}
